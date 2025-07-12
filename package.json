@@ -1,0 +1,24 @@
+{
+  "name": "autotrace",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "gateway",
+    "services/*",
+    "shared"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thimiramanujaya/autotrace.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thimiramanujaya/autotrace/issues"
+  }
+}
