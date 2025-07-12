@@ -14,6 +14,7 @@ export class ScrapeController {
 
     const html = await this.scraperService.scrapePage(url);
     const listing = this.scraperService.processScrapedData(html);
+    // await this.scraperService.saveScrapedListing(listing);
 
     res.status(200).json({ success: true, data: listing });
     

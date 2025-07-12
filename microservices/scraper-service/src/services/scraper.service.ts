@@ -16,7 +16,6 @@ export class ScraperService {
     if (!response.data) {
       throw new Error(`Empty response received from ${url}`);
     }
-    console.log(response)
     return cheerio.load(response.data);
     } catch (err) {
       console.error(err);
