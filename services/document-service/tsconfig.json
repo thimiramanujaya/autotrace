@@ -1,9 +1,26 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "nodenext",
+    "rootDir": "./src",
     "outDir": "./dist",
-    "rootDir": "./src"
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "sourceRoot": "./src",
+
+    "moduleResolution": "nodenext",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+
+    "strict": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
   },
   "include": ["src/**/*"],
-  "exclude": ["dist"]
+  "exclude": ["node_modules", "dist"]
 }
