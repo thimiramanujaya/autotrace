@@ -1,5 +1,5 @@
-import Joi from 'joi';
+import Joi from "joi";
 
 export const scrapeRequestSchema = Joi.object({
-  url: Joi.string().uri().required()
+  url: Joi.string().uri().required(),
 });

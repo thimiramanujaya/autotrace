@@ -1,3 +1,3 @@
 import { ListingModel } from "./listing.model";
 
-export { ListingModel};
+export { ListingModel };

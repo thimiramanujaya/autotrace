@@ -1,8 +1,7 @@
-import { Request, Response, NextFunction } from 'express';
-import { UserService } from '../../services';
+import { Request, Response, NextFunction } from "express";
+import { UserService } from "../../services";
 
 export class UserController {
-
   private userService: UserService;
 
   constructor() {
