@@ -1,6 +1,11 @@
 import { Timestamp, QueryDocumentSnapshot } from 'firebase-admin/firestore';
-import { firestore } from '../config/firebase';
+import { ServiceAccount } from 'firebase-admin';
+import serviceAccount from '../../serviceAccountKey.json';
+import { initFirestore } from '../../../shared/src/config';
 import { Listing } from '../types';
+
+const databaseURL = process.env.FIREBASE_DATABASE_URL;
+const firestore = initFirestore(serviceAccount as ServiceAccount, databaseURL as string);
 
 const collection = () => firestore.collection('listings');
 

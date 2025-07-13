@@ -3,11 +3,9 @@
     "target": "ES2023",
     "lib": ["ES2023"],
     "module": "nodenext",
-    "rootDir": "./src",
     "outDir": "./dist",
     "skipLibCheck": true,
     "sourceMap": true,
-    "sourceRoot": "./src",
 
     "moduleResolution": "nodenext",
     "isolatedModules": true,
