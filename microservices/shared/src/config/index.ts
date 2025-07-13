@@ -1,3 +1,3 @@
-import { initFirestore } from "./firebase";
+import { initFirestore, Timestamp, QueryDocumentSnapshot } from "./firebase";
 
-export { initFirestore };
+export { initFirestore, Timestamp, QueryDocumentSnapshot };

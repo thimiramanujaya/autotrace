@@ -1,12 +1,13 @@
-import admin, { ServiceAccount } from 'firebase-admin';
+import { initializeApp, cert, ServiceAccount } from 'firebase-admin/app';
+import { getFirestore, Timestamp, QueryDocumentSnapshot } from 'firebase-admin/firestore';
 
 export function initFirestore(serviceAccount: ServiceAccount, databaseURL: string) {
-  if (!admin.apps.length) {
-    admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
-      databaseURL: databaseURL,
-    });
-  }
-  const firestore = admin.firestore();
-  return firestore;
+  const app = initializeApp({
+    credential: cert(serviceAccount),
+    databaseURL
+  });
+
+  return getFirestore(app);
 }
+
+export { Timestamp, QueryDocumentSnapshot };
