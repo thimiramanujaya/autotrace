@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { ScraperService, ListingService } from '../services';
+import { ScraperService, ListingService } from '../../services';
 
 export class ScrapeController {
 
