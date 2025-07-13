@@ -1,3 +1,3 @@
-import scrapeRoutes from './scrape.routes';
+import scrapeRoutes from "./scrape.routes";
 
 export { scrapeRoutes };
