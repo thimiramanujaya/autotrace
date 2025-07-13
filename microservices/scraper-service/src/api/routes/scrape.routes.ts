@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { ScrapeController } from '../controllers';
-import { validateRequest } from '../middleware';
-import { scrapeRequestSchema } from '../validators/schemas';
+import { validateRequest } from '../../middleware';
+import { scrapeRequestSchema } from '../../validators/schemas';
 
 const router = Router();
 const scrapeController = new ScrapeController();
