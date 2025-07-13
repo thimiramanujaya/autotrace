@@ -1,0 +1,25 @@
+{
+  "name": "@autotrace/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "@types/express": "^5.0.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "joi": "^17.13.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}

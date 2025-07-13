@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { json, urlencoded } from 'express';
 import apiRouter from './api';
-import { errorHandler } from './middleware';
+import { errorHandler } from '../../shared/src/middleware';
 
 dotenv.config();
 
